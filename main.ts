@@ -141,22 +141,22 @@ let PlayerSprite = sprites.create(img`
 controller.moveSprite(PlayerSprite, 100, 100)
 scene.cameraFollowSprite(PlayerSprite)
 let EnemySprite = sprites.create(img`
-    . . . . . . . . . . b b b . . . 
-    . . . . . . . . b e e 3 3 b . . 
-    . . . . . . b b e 3 2 e 3 a . . 
-    . . . . b b 3 3 e 2 2 e 3 3 a . 
-    . . b b 3 3 3 3 3 e e 3 3 3 a . 
-    b b 3 3 3 3 3 3 3 3 3 3 3 3 3 a 
-    b 3 3 3 d d d d 3 3 3 3 3 d d a 
-    b b b b b b b 3 d d d d d d 3 a 
-    b d 5 5 5 5 d b b b a a a a a a 
-    b 3 d d 5 5 5 5 5 5 5 d d d d a 
-    b 3 3 3 3 3 3 d 5 5 5 d d d d a 
-    b 3 d 5 5 5 3 3 3 3 3 3 b b b a 
-    b b b 3 d 5 5 5 5 5 5 5 d d b a 
-    . . . b b b 3 d 5 5 5 5 d d 3 a 
-    . . . . . . b b b b 3 d d d b a 
-    . . . . . . . . . . b b b a a . 
+    . . 2 2 b b b b b . . . . . . . 
+    . 2 b 4 4 4 4 4 4 b . . . . . . 
+    2 2 4 4 4 4 d d 4 4 b . . . . . 
+    2 b 4 4 4 4 4 4 d 4 b . . . . . 
+    2 b 4 4 4 4 4 4 4 d 4 b . . . . 
+    2 b 4 4 4 4 4 4 4 4 4 b . . . . 
+    2 b 4 4 4 4 4 4 4 4 4 e . . . . 
+    2 2 b 4 4 4 4 4 4 4 b e . . . . 
+    . 2 b b b 4 4 4 b b b e . . . . 
+    . . e b b b b b b b e e . . . . 
+    . . . e e b 4 4 b e e e b . . . 
+    . . . . . e e e e e e b d b b . 
+    . . . . . . . . . . . b 1 1 1 b 
+    . . . . . . . . . . . c 1 d d b 
+    . . . . . . . . . . . c 1 b c . 
+    . . . . . . . . . . . . c c . . 
     `, SpriteKind.Enemy)
 EnemySprite.follow(PlayerSprite, 100)
 EnemySprite.setPosition(20, 20)
